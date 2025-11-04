@@ -926,9 +926,10 @@ app.get('/', (c) => {
   `);
 });
 
-console.log('Server starting on http://localhost:3000');
+const portFromEnv = Number(process.env.PORT || 3000);
+console.log(`Server starting on http://localhost:${portFromEnv}`);
 
 export default {
-  port: 3000,
+  port: portFromEnv,
   fetch: app.fetch,
 };

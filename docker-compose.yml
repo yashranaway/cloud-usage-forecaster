@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  ml-resource-predictor:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+    volumes:
+      - ./output:/app/output
+      - ./df_scaled.csv:/app/df_scaled.csv
+

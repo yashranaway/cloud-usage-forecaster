@@ -57,9 +57,9 @@ A machine learning framework for predicting cloud computing resource usage with 
    ```
 
 ## Usage
-
 Run the main script to access the interactive menu:
 ```
+source .venv/bin/activate
 python src/main.py
 ```
 
@@ -68,6 +68,19 @@ Or run individual components:
 - ARIMA model: `python models/arima_model.py`
 - LSTM model: `python models/lstm_model.py`
 - DeepAR model: `python models/deepar_model.py`
+
+Start the frontend server (Bun/Hono):
+```
+bun install
+bun run index.ts
+# open http://localhost:3000
+```
+
+Docker (optional):
+```
+docker compose up --build
+# open http://localhost:3000
+```
 
 ## Data Fetching
 

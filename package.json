@@ -9,6 +9,10 @@
   "peerDependencies": {
     "typescript": "^5"
   },
+  "scripts": {
+    "start": "bun run index.ts",
+    "typecheck": "bun x tsc --noEmit"
+  },
   "dependencies": {
     "hono": "^4.9.12"
   }

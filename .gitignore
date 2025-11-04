@@ -41,3 +41,6 @@ __pycache__/
 # Local data/artifacts (keep outputs versioned if desired)
 raw_data/
 .cursor/
+output/*.csv
+output/*.parquet
+*.csv
