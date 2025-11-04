@@ -8,5 +8,5 @@ services:
       - PORT=3000
     volumes:
       - ./output:/app/output
-      - ./df_scaled.csv:/app/df_scaled.csv
+      - ./backend/data:/app/backend/data
 

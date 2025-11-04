@@ -6,8 +6,8 @@ import { join } from 'path';
 const app = new Hono();
 
 // Serve static files from public directory
-app.use('/static/*', serveStatic({ root: './' }));
-app.use('/output/*', serveStatic({ root: './' }));
+  app.use('/static/*', serveStatic({ root: './' }));
+  app.use('/output/*', serveStatic({ root: './' }));
 
 // API endpoint to get CSV data
 app.get('/api/data', async (c) => {
@@ -94,9 +94,9 @@ app.get('/api/models/status', async (c) => {
 app.post('/api/models/run/:modelName', async (c) => {
   const modelName = c.req.param('modelName');
   const modelMap: Record<string, string> = {
-    'arima': 'models/arima_model.py',
-    'lstm': 'models/lstm_model.py',
-    'deepar': 'models/deepar_model.py'
+    'arima': 'backend/models/arima_model.py',
+    'lstm': 'backend/models/lstm_model.py',
+    'deepar': 'backend/models/deepar_model.py'
   };
   
   const modelFile = modelMap[modelName.toLowerCase()];
@@ -106,7 +106,7 @@ app.post('/api/models/run/:modelName', async (c) => {
   
   try {
     // Use virtual environment Python if available, otherwise python3
-    const pythonPath = '.venv/bin/python';
+    const pythonPath = 'backend/.venv/bin/python';
     const fs = require('fs');
     const pythonCmd = fs.existsSync(pythonPath) ? pythonPath : 'python3';
     

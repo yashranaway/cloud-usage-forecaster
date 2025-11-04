@@ -59,6 +59,7 @@ A machine learning framework for predicting cloud computing resource usage with 
 ## Usage
 Run the main script to access the interactive menu:
 ```
+cd backend
 source .venv/bin/activate
 python src/main.py
 ```

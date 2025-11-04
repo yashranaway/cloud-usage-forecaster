@@ -17,13 +17,12 @@ RUN curl -fsSL https://bun.sh/install | bash \
   && ln -s /usr/local/bun/bin/bun /usr/local/bin/bun
 
 # Copy project files
-COPY requirements.txt package.json tsconfig.json index.ts /app/
-COPY src /app/src
-COPY models /app/models
+COPY package.json tsconfig.json index.ts /app/
+COPY backend /app/backend
 COPY output /app/output
 
 # Python deps
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r backend/requirements.txt
 
 # Node deps
 RUN bun install --no-progress

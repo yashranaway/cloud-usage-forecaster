@@ -37,6 +37,7 @@ report.[0-9]_.[0-9]_.[0-9]_.[0-9]_.json
 __pycache__/
 *.pyc
 .venv/
+backend/.venv/
 
 # Local data/artifacts (keep outputs versioned if desired)
 raw_data/
