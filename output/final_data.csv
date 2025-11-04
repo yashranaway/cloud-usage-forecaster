@@ -1,0 +1,2 @@
+Timestamp,Timestamp [ms],CPU cores,CPU capacity provisioned [MHZ],CPU usage [MHZ],CPU usage [%],Memory capacity provisioned [KB],Memory usage [KB],Disk read throughput [KB/s],Disk write throughput [KB/s],Network received throughput [KB/s],Network transmitted throughput [KB/s],VM,weekday,weekend,month,day,CPU usage prev,CPU_diff,received_prev,received_diff,transmitted_prev,transmitted_diff
+1970-01-01,0,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0,144.0,0.0,48.0,48.0,102611.75257659008,-102611.75257659008,603195.2325729826,-603195.2325729826,614249.3656676656,-614249.3656676656
