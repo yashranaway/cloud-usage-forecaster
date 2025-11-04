@@ -1,5 +1,5 @@
 {
-  "name": "ml_resource_predictor",
+  "name": "cloud-usage-forecaster",
   "module": "index.ts",
   "type": "module",
   "private": true,

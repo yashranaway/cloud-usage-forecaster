@@ -1,6 +1,6 @@
-# Machine Learning Resource Predictor
+# Cloud Usage Forecaster
 
-A machine learning framework for predicting cloud computing resource usage with a focus on CPU utilization forecasting. This framework implements multiple predictive models to enable cost-effective resource allocation decisions.
+A machine learning framework for forecasting cloud computing resource usage with a focus on CPU utilization. It implements multiple predictive models to enable cost‑effective resource allocation decisions and provides a lightweight web dashboard for analysis.
 
 ![System Model](system_model.jpg)
 

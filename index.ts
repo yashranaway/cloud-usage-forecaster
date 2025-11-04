@@ -161,7 +161,7 @@ app.get('/', (c) => {
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ML Resource Predictor</title>
+  <title>Cloud Usage Forecaster</title>
   <style>
     * {
       margin: 0;
@@ -306,7 +306,7 @@ app.get('/', (c) => {
 <body>
   <div class="container">
     <header>
-      <h1>ML Resource Predictor</h1>
+      <h1>Cloud Usage Forecaster</h1>
       <p>Cloud Computing Resource Usage Analysis</p>
     </header>
     
